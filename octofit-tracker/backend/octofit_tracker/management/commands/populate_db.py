@@ -4,7 +4,7 @@ from pymongo import MongoClient
 from bson.objectid import ObjectId
 
 class Command(BaseCommand):
-    help = 'Populate octofit_db with test data using pymongo.'
+    help = 'Populate octofit_db with test data using pymongo. '
 
     def handle(self, *args, **kwargs):
         client = MongoClient('localhost', 27017)
